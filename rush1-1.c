@@ -5,6 +5,11 @@
 ** Ass1
 */
 
+void my_putchar(char c)
+{
+    write(1, &c, 1);
+}
+
 void rush(int x, int y)
 {
     int i;
@@ -25,4 +30,10 @@ void rush(int x, int y)
         }
         my_putchar('\n');
     }
+}
+
+int main()
+{
+    rush(7, 5);
+    return (0);
 }
